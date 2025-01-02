@@ -1,0 +1,68 @@
+/* LandingPage.css */
+.landing-page {
+    background-image: url('../assets/landing-page.jpg');
+    background-size: cover; /* Asegura que cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    width: 100vw; /* Ocupa el 100% del ancho */
+    height: 100vh; /* Ocupa el 100% de la altura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Evita scroll innecesario */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Capa semitransparente oscura */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.company-name {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.company-description {
+    font-size: 1.2rem;
+    line-height: 1.6; /* Mejora la legibilidad */
+    margin-bottom: 30px;
+    max-width: 600px; /* Limita el ancho del párrafo */
+    text-align: center; /* Centra el texto */
+}
+
+
+.start-button {
+    background-color: #4caf50; /* Verde llamativo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .company-name {
+        font-size: 2rem;
+    }
+
+    .company-description {
+        font-size: 1rem;
+    }
+
+    .start-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

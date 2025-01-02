@@ -1,0 +1,226 @@
+/* Contenedor del icono de Home */
+.home-icon-container {
+    position: relative;
+    top: 5px; /* Ajusta según tu diseño */
+    left: 20px; /* Ajusta según tu diseño */
+    color: white; /* Color del icono */
+    font-size: 48px; /* Tamaño del icono */
+    cursor: pointer;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    transition: transform 0.2s ease, color 0.2s ease; /* Animación */
+    margin-right: 2px;
+}
+
+/* Efecto hover para el icono de Home */
+.home-icon-container:hover {
+    transform: scale(1.2); /* Agranda ligeramente el icono */
+    color: #f0f0f0; /* Cambia el color al pasar el mouse */
+}
+
+/* Página general */
+.products-page {
+    position: relative;
+    background-image: url('../assets/lista-plantas.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    min-height: 100vh; /* Ocupa al menos el 100% de la altura de la ventana */
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+    margin: 0; /* Elimina márgenes externos */
+    padding: 0; /* Elimina el relleno */
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+/* Título principal */
+.page-title {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Contenedor de categorías */
+.categories-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas si es necesario */
+    justify-content: flex-start; /* Distribuye los botones para ocupar todo el ancho */
+    width: 80%; /* Ocupa todo el ancho disponible */
+    margin-top: 2px; /* Espaciado superior */
+    padding: 10px; /* Espaciado interno del contenedor */
+}
+
+/* Botones de las categorías */
+.category-button {
+    flex: 1 1 calc(25% - 20px); /* Cada botón ocupa el 25% del ancho del contenedor menos márgenes */
+    max-width: 300px; /* Ancho máximo para evitar botones excesivamente grandes */
+    min-width: 150px; /* Asegura un ancho mínimo para los botones */
+    margin: 10px; /* Espaciado entre botones */
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo gris transparente */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 15px 20px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño de la fuente */
+    text-align: center; /* Centra el texto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto hover para los botones */
+.category-button:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo más claro al pasar el mouse */
+    transform: scale(1.05); /* Agranda ligeramente el botón */
+}
+
+/* Contenedor de la categoría seleccionada */
+.selected-category {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del carrusel */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+/* Título de la categoría seleccionada */
+.selected-category-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Carrusel */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Botones del carrusel */
+.carousel-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Animación de escala */
+}
+
+/* Item del carrusel */
+.carousel-item {
+    text-align: center;
+    width: 300px; /* Ancho fijo del carrusel */
+}
+
+/* Imagen de la planta en el carrusel */
+.plant-thumbnail {
+    width: 200px; /* Ancho fijo */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Recorta la imagen para que se ajuste al área sin deformarse */
+    border-radius: 10px; /* Bordes redondeados para un diseño más atractivo */
+    margin-bottom: 10px; /* Espaciado inferior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para un efecto visual */
+}
+
+/* Botón de agregar al carrito */
+.add-to-cart-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.add-to-cart-button:hover {
+    background-color: #45a049;
+}
+
+/* Cabecera de la página */
+.page-header {
+    background-color: rgba(51, 51, 51, 0.8); /* Color de fondo más oscuro con transparencia */
+    color: #fff; /* Color del texto */
+    padding: 2px 2px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    min-height: 60px;
+}
+
+/* Icono del carrito de compra */
+.shopping-cart-container {
+    z-index: 10; /* Asegura que esté siempre visible encima de otros elementos */
+    display: flex;
+    -ms-flex-align: end;
+    align-items: center;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.shopping-cart-icon {
+    font-size: 48px; /* Tamaño del icono */
+    color: white; /* Color del icono */
+    cursor: pointer; /* Cambia el cursor cuando se pasa por encima */
+    transition: transform 0.2s ease; /* Agrega animación al pasar el mouse */
+}
+
+.shopping-cart-icon:hover {
+    transform: scale(1.2); /* Agranda ligeramente el icono al pasar el mouse */
+}
+
+.cart-badge {
+    background-color: red; /* Color de fondo para el indicador de cantidad */
+    color: white; /* Color del texto */
+    font-size: 14px; /* Tamaño del texto */
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Hace que sea un círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25px; /* Posiciona el badge sobre el icono */
+    right: 20px;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .categories-container {
+        flex-wrap: wrap; /* Permite que los botones pasen a una nueva fila */
+        justify-content: center; /* Centra los botones en pantallas pequeñas */
+    }
+
+    .category-button {
+        flex: 1 1 90%; /* Cada botón ocupa casi todo el ancho en pantallas pequeñas */
+        margin: 10px auto; /* Espaciado uniforme con centrado horizontal */
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+    }
+}
